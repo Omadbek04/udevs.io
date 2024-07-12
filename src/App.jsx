@@ -1,8 +1,10 @@
-
+import { Navbar } from "./components/Index";
 
 const App = () => {
   return (
-  <h1> hello udevs </h1>
+    <>
+      <Navbar />
+    </>
   );
 };
 

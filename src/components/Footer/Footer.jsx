@@ -1,8 +1,6 @@
-import "./Footer.css"
+import "./Footer.css";
 const Footer = () => {
-  return (
-    <div>Footer</div>
-  )
-}
+  return <footer className=" flex justify-betwee items-center gap-2"></footer>;
+};
 
-export default Footer
+export default Footer;

@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --primary: #1b5bf7;
   --primary-disabled: #84a0e7;
@@ -16,20 +19,7 @@
   --testing: #e1e9fe;
   --backend: #bddaed;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-ul,
-ol,
-input,
-button {
-  outline: none;
-  list-style-type: none;
-  border: none;
-  background: none;
-}
+
 body,
 h1,
 h2,
@@ -39,7 +29,7 @@ h5,
 h6 {
   font-family: Manrope, sans-serif;
 }
-.container {
+.custom_contianer {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;

@@ -1,9 +1,15 @@
-import "./Navbar.css"
+import { LogoImage } from "../../ui/Image";
 
 const Navbar = () => {
   return (
-    <div className=" navbar">Navbar</div>
-  )
-}
+    <header>
+      <nav className=" custom_contianer">
+        <div className=" w-[96px] h-[32px] cursor-pointer">
+          <LogoImage />
+        </div>
+      </nav>
+    </header>
+  );
+};
 
-export default Navbar
+export default Navbar;
