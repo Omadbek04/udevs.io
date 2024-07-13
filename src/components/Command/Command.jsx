@@ -1,8 +1,8 @@
-import "./Command.css"
-
 const Command = () => {
   return (
-    <div>Command</div>
+    <section id="team" className=" bg-navbarClose  py-20  mt">
+
+    </section>
   )
 }
 

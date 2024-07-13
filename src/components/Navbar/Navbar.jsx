@@ -11,7 +11,7 @@ const Navbar = () => {
   }, []);
   return (
     <>
-      <header className="border-b fixed top-0 w-full z-10">
+      <header className="border-b fixed top-0 w-full z-10 mb-8">
         <nav className=" custom_contianer h-[72px]    flex justify-between items-center">
           <a href="/hero" className=" w-[96px] h-[32px] cursor-pointer">
             <LogoImage />
