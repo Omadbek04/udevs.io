@@ -39,6 +39,5 @@ h6 {
   transition: all 0.2s ease-in-out;
 }
 .shadow-dropdown{
-  box-shadow: 0 0 2px rgba(0, 0, 0, .04), 0 4px 4px rgba(0, 0, 0, .08);
   transform: translateX(-28%);
 }

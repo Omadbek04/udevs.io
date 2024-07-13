@@ -13,9 +13,9 @@ const Navbar = () => {
     <>
       <header className="border-b fixed top-0 w-full z-10">
         <nav className=" custom_contianer h-[72px]    flex justify-between items-center">
-          <div className=" w-[96px] h-[32px] cursor-pointer">
+          <a href="/hero" className=" w-[96px] h-[32px] cursor-pointer">
             <LogoImage />
-          </div>
+          </a>
 
           <ul className="hidden md:flex items-center justify-between gap-6 xl:gap-8 ">
             <li>

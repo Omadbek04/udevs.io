@@ -8,7 +8,8 @@ export default {
     extend: {
         colors:{
           primary:"#1b5bf7",
-          navbarClose:"#f4f7ff"
+          navbarClose:"#f4f7ff",
+          secondary:"#464359"
         }
     },
   },
