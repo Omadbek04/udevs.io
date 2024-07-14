@@ -2,7 +2,7 @@ import {TeamIcon } from "../../ui/Image";
 
 const Direction = () => {
   return (
-    <section id="direction" className=" custom_contianer ">
+    <section id="direction" className=" custom_contianer  ">
       <div className=" py-[100px] mt-[100px]">
         <h1 className=" text-[32px] md:text-[64px] text-center md:text-start font-bold text-primary mb-[42px]   ">Our services</h1>
         <div className=" grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-[30px]">

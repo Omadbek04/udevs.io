@@ -37,7 +37,7 @@ const technologiy = [
 ];
 const DevelopmentMobileApplication = () => {
   return (
-    <section id="DevelopmentMobileApplication  " className=" py-4 md:py-[80px] ">
+    <section id="DevelopmentMobileApplication  " className=" py-4 md:py-[80px] h-screen  flex flex-col items-center justify-center">
       <div className=" custom_contianer">
         <h1 className=" text-[32px] md:text-[64px] font-extrabold  text-primary">Development of mobile applications</h1>
         <div className=" flex justify-between flex-col-reverse md:flex-row">
