@@ -45,7 +45,7 @@ const DevelopmentMobileApplication = () => {
             <p className="mb-4 md:mb-[26px] max-w-[500px] leading-[30px] md:leading-10 text-[16px] md:text-[24px] font-medium">In collaboration with startups, we have learned how to create a creative and functional user interface for mobile applications.</p>
             <div className="grid grid-cols-3 gap-2 md:gap-[15px] mb-2 md:mb-[25px]">
               {devCards.map((item) => {
-                return <Card title={item.title} img={item.img} key={item.id} />;
+                return <Card bg="navbarClose" title={item.title} img={item.img} key={item.id} />;
               })}
             </div>
             <h3 className="text-[32px]  leading-10 mb-8  sm:mb-[30px] text-secondary font-semibold">Technologies</h3>
