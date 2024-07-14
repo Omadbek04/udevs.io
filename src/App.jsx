@@ -4,18 +4,19 @@ import Direction from "./components/Direction/Direction";
 import { Navbar } from "./components/Index";
 import DevelopmentMobileApplication from "./components/Service/Developmen-of-mobile/DevelopmentMobileApplication";
 import Erp from "./components/Service/Development-erp-sysytem/Erp";
-// import UxIx from "./components/Service/User-Intarface/UxIx";
+import UxIx from "./components/Service/User-Intarface/UxIx";
 // <Hero />
-// <UxIx />
+
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Direction />
-      <Command />
-      <DevelopmentMobileApplication />
-      <Erp/>
+    <Navbar />
+    <Direction />
+    <Command />
+    <DevelopmentMobileApplication />
+    <Erp/>
+    <UxIx />
     </>
   );
 };

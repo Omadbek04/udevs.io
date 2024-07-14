@@ -50,16 +50,16 @@ const DevelopmentMobileApplication = () => {
             </div>
             <h3 className="text-[32px]  leading-10 mb-8  sm:mb-[30px] text-secondary font-semibold">Technologies</h3>
 
-            <div className=" flex gap-4 md:gap-12">
-              {technologiy.map((item) => {
-                return (
-                  <div key={item.id}>
-                    <img src={item.src} alt={item.title} className="mb-2 w-[42px] md:w-[56px] h-[42px] md:h-[56px]" />
-                    <span className=" text-[20px] font-semibold text-secondary"> {item.title}</span>
-                  </div>
-                );
-              })}
-            </div>
+              <div className=" flex gap-4 md:gap-12">
+                {technologiy.map((item) => {
+                  return (
+                    <div key={item.id}>
+                      <img src={item.src} alt={item.title} className="mb-2 w-[42px] md:w-[56px] h-[42px] md:h-[56px]" />
+                      <span className=" text-[20px] font-semibold text-secondary"> {item.title}</span>
+                    </div>
+                  );
+                })}
+              </div>
           </div>
           <div className="  bg-no-repeat object-cover rounded-3xl flex items-center justify-center " style={{ backgroundImage: `url(${bgMobile})` }}>
             <img src={mobile} alt="mobile image" className=" w-full" />
