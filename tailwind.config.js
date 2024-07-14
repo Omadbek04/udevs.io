@@ -9,7 +9,7 @@ export default {
         colors:{
           primary:"#1b5bf7",
           navbarClose:"#f4f7ff",
-          secondary:"#464359"
+          secondary:"#464359",
         }
     },
   },
