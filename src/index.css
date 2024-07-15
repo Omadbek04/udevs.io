@@ -33,11 +33,12 @@ h6 {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 .btn:hover {
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
 }
-.shadow-dropdown{
+.shadow-dropdown {
   transform: translateX(-28%);
 }

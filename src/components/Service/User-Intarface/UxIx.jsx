@@ -82,7 +82,7 @@ const UxIx = () => {
               })}
             </div>
           </div>
-          <div style={{ backgroundImage: `url(${bgMobile})` }} className=" bg-no-repeat  bg-cover rounded-3xl min:h-[400px] md:min-h-[606px] flex items-center  justify-center">
+          <div style={{ backgroundImage: `url(${bgMobile})` }} className=" bg-no-repeat  bg-cover  rounded-3xl min:h-[400px] md:min-h-[606px] flex items-center  justify-center">
             <img src={design} alt="design" className="" />
           </div>
         </div>
