@@ -11,6 +11,9 @@ export default {
         bgCard: "#e0e8ff",
         bacground: "#f4f7ff",
       },
+      borderColor:{
+        chekboxColor:"#1b5bf7"
+      }
     },
   },
   plugins: [],

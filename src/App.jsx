@@ -7,6 +7,7 @@ import Erp from "./components/Service/Development-erp-sysytem/Erp";
 import ItConsulting from "./components/Service/It-consulting/ItConsulting";
 import Optimization from "./components/Service/Optimazition-it-consulting/Optimization";
 import UxIx from "./components/Service/User-Intarface/UxIx";
+import Tools from "./components/Tools/Tools";
 // <Hero />
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
       <UxIx />
       <Optimization />
       <ItConsulting/>
+      <Tools/>
     </>
   );
 };
