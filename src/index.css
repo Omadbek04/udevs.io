@@ -165,3 +165,10 @@ h6 {
   perspective: 100px;
   cursor: pointer;
 }
+
+
+@media screen and (max-width:765px) {
+  .bg-delete{
+    background-image: none !important;
+  }
+}

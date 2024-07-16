@@ -2,6 +2,7 @@
 import Clients from "./components/Clients/Clients";
 import Command from "./components/Command/Command";
 import Direction from "./components/Direction/Direction";
+import { HowWeWork } from "./components/HowWeWork";
 import { Navbar } from "./components/Index";
 import Delever from "./components/Portfolio/Delever/Delever";
 import Goodzone from "./components/Portfolio/GoodZone/Goodzone";
@@ -32,6 +33,7 @@ const App = () => {
       <Sms/>
       <Goodzone/>
       <Iman/>
+      <HowWeWork/>
     </>
   );
 };
