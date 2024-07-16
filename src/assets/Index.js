@@ -7,3 +7,4 @@ export { default as bgMobile } from "./Images/bg-development-mobile.png";
 export { default as desktop } from "./Images/desktop.png";
 export { default as design } from "./Images/design-0951fd1e6afedab989f63e037535430f.png";
 export { default as itConsulting } from "./Images/consulting.svg";
+export {default as akfa} from  "./Images/akfa.svg"

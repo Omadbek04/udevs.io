@@ -1,4 +1,5 @@
 // import { Hero } from "./components/Hero/Hero";
+import Clients from "./components/Clients/Clients";
 import Command from "./components/Command/Command";
 import Direction from "./components/Direction/Direction";
 import { Navbar } from "./components/Index";
@@ -22,6 +23,7 @@ const App = () => {
       <Optimization />
       <ItConsulting/>
       <Tools/>
+      <Clients/>
     </>
   );
 };
