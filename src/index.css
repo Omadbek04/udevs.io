@@ -42,3 +42,47 @@ h6 {
 .shadow-dropdown {
   transform: translateX(-28%);
 }
+
+/* tools */
+
+.hide {
+  opacity: 0.4;
+  transition: opacity 0.2s linear;
+}
+
+.devops {
+  background-color: #a8bfff;
+  transition: opacity 0.2s linear;
+  opacity: 1 !important;
+}
+.mobile {
+  background-color: #dbe5ff;
+  transition: opacity 0.2s linear;
+  opacity: 1 !important;
+}
+.infrastructure {
+  background-color: #d1dde8;
+  transition: opacity 0.2s linear;
+  opacity: 1 !important;
+}
+
+.frontend {
+  background-color: #c6d6ff;
+  transition: opacity 0.2s linear;
+  opacity: 1 !important;
+}
+.ux-ui {
+  background-color: #ced6ee;
+  transition: opacity 0.2s linear;
+  opacity: 1 !important;
+}
+.backend {
+  background-color: #bddaed;
+  transition: opacity 0.2s linear;
+  opacity: 1 !important;
+}
+.testing {
+  background-color: #e1e9fe;
+  transition: opacity 0.2s linear;
+  opacity: 1 !important;
+}
