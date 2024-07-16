@@ -4,6 +4,7 @@ import Command from "./components/Command/Command";
 import Direction from "./components/Direction/Direction";
 import { Navbar } from "./components/Index";
 import Delever from "./components/Portfolio/Delever/Delever";
+import Goodzone from "./components/Portfolio/GoodZone/Goodzone";
 import Sms from "./components/Portfolio/Sms-uz/Sms";
 import DevelopmentMobileApplication from "./components/Service/Developmen-of-mobile/DevelopmentMobileApplication";
 import Erp from "./components/Service/Development-erp-sysytem/Erp";
@@ -28,6 +29,7 @@ const App = () => {
       <Clients/>
       <Delever/>
       <Sms/>
+      <Goodzone/>
     </>
   );
 };
