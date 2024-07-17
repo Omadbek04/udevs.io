@@ -30,7 +30,7 @@ const uxCards = [
 
 const Goodzone = () => {
   return (
-    <section id="goodzone" className=" py-20">
+    <section id="goodzone" className=" py-20" data-aos="zoom-in-up">
       <div className="custom_contianer">
         <div className=" block md:hidden">
         <img

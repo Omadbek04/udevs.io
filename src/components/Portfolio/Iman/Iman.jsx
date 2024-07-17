@@ -21,7 +21,7 @@ const uxCards = [
 
 const Iman = () => {
   return (
-    <section id="iman" className=" py-20">
+    <section id="iman" className=" py-20" data-aos="zoom-in-up">
       <div className="custom_contianer">
         <div className=" flex flex-col-reverse gap-10 md:gap-0 md:flex-row justify-between items-center">
           <div>

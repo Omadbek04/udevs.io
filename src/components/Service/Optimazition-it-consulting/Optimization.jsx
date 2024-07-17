@@ -41,7 +41,7 @@ const optimization = [
 
 const Optimization = () => {
   return (
-    <section id="optimization" className=" bg-bacground py-4 md:py-[80px] mt-5 md:mt-0">
+    <section id="optimization" className=" bg-bacground py-4 md:py-[80px] mt-5 md:mt-0" data-aos="zoom-in-up">
       <div className="custom_contianer">
         <h1 className=" text-[32px] md:text-[64px] font-bold  text-primary max-w-[800px] mb-[21px] md:mb-[48px]">Optimization Infrastructure</h1>
         <div className=" flex justify-between  flex-wrap gap-6 md:gap-0">

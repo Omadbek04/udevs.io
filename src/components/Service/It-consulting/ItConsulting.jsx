@@ -36,7 +36,7 @@ const consulting = [
 
 const ItConsulting = () => {
   return (
-    <section id="it-consulting " className=" py-[16px] md:py-[80px] ">
+    <section id="itcons" className=" py-[16px] md:py-[80px] " data-aos="zoom-in-up">
       <div className=" custom_contianer">
         <h1 className=" text-[32px] md:text-[64px] font-extrabold  text-primary mb-[32px] md:mb-[64px]">IT consulting</h1>
         <div className=" flex justify-between  flex-wrap-reverse">

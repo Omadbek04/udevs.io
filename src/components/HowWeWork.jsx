@@ -33,7 +33,7 @@ const howWork = [
 
 export const HowWeWork = () => {
   return (
-    <section id="works" className=" p-10 md:py-20">
+    <section id="works" className=" p-10 md:py-20" data-aos="zoom-in-up">
       <div className="custom_contianer">
         <h1 className=" text-[32px] md:text-[64px] font-extrabold  text-primary ">How we work!</h1>
 

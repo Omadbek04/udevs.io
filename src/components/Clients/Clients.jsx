@@ -61,7 +61,7 @@ const cleintsCard = [
 
 const Clients = () => {
   return (
-    <section id="clients" className=" py-[30px]">
+    <section id="clients" className=" py-[30px]" data-aos="zoom-in-up">
       <div className="custom_contianer">
         <h1 className="text-[32px] mb-[30px] md:mb-[53px] md:text-[64px] font-extrabold text-primary">Our clients</h1>
       </div>

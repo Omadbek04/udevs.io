@@ -1,175 +1,173 @@
-import { useRef, useEffect, useState } from "react";
+import {  useState } from "react";
 import { burgerMenu, downArow } from "../../assets/Index";
 import { Delever, ErpSystem, Goodzone, Iman, It, LanduageEng, LanguageRus, LogoImage, MobileDevelopment, Optimization, Sms, UxUi } from "../../ui/Image";
 import Button from "../../ui/Button";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const ActiveRef = useRef();
   const [toggle, setToggle] = useState(false);
-  useEffect(() => {
-    ActiveRef.current.focus();
-  }, []);
+
   return (
     <>
-      <header className="border-b fixed top-0 w-full z-10 mb-8 bg-white">
-        <nav className=" custom_contianer h-[72px]    flex justify-between items-center">
-          <a href="/hero" className=" w-[96px] h-[32px] cursor-pointer">
+      <header className="border-b  fixed top-0 w-full  z-[1] mb-8 bg-white " >
+        <nav className=" custom_contianer h-[72px]   flex justify-between items-center">
+          <Link to="hero" className=" w-[96px] h-[32px]  cursor-pointer" smooth duration={500}>
             <LogoImage />
-          </a>
+          </Link>
 
-          <ul className="hidden md:flex items-center justify-between gap-6 xl:gap-8 ">
+          <ul className="hidden md:flex  items-center justify-between gap-6 xl:gap-8 ">
             <li>
-              <a ref={ActiveRef} href="#" className={` text-[14px] font-semibold outline-none border-b-2  border-white ${ActiveRef ? " focus:border-primary focus:border-b-2" : "border-white"} hover:border-primary py-[10px] `}>
+              <Link smooth duration={500}  to="hero" className={` text-[14px] cursor-pointer font-semibold outline-none border-b-2  border-white  focus:border-primary focus:border-b-2"  hover:border-primary py-[10px] `}>
                 Direction
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="#" className="text-[14px] font-semibold  border-b-2 border-white hover:border-primary py-[10px] focus:border-primary">
+              <Link smooth duration={500} to="team" className=" cursor-pointer text-[14px] font-semibold  border-b-2 border-white hover:border-primary py-[10px] focus:border-primary">
                 Command
-              </a>
+              </Link>
             </li>
 
-            <li className="text-[14px] font-semibold flex items-center py-[10px] gap-1 relative group hover:last:block">
-              <a href="#" className="text-[14px] font-semibold border-b-2  border-white focus:border-primary">
+            <li className="text-[14px] font-semibold flex items-center py-[10px] gap-1  group hover:last:block">
+              <Link to="development" smooth duration={500}   className="text-[14px] cursor-pointer font-semibold border-b-2  border-white focus:border-primary">
                 Services
-              </a>
+              </Link>
               <img src={downArow} alt="down arrow" width={12} height={12} />
 
-              <ul className="hidden py-3 bg-white border min-w-[300px] shadow-dropdown rounded-md absolute z-10 top-[90%] group-hover:block ">
+              <ul className="hidden py-3 cursor-pointer bg-white border min-w-[300px] shadow-dropdown rounded-md  absolute z-[99] top-[70%] group-hover:block ">
                 <p className="text-[12px] font-bold leading-4 text-gray-400 ml-[1.45rem] mb-5">Services</p>
 
                 <li className="mb-2">
-                  <a href="#" className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
+                  <Link to="development" smooth duration={500} className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
                     <div>
                       <MobileDevelopment />
                     </div>
                     <span className="leading-5 text-[13px] font-normal">Development of mobile applications</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="mb-2">
-                  <a href="#" className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
+                  <Link to="erp" smooth duration={500} className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
                     <div>
                       <ErpSystem />
                     </div>
                     <span className="leading-5 text-[13px] font-normal">Development and implementation ERP systems</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="mb-2">
-                  <a href="#" className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
+                  <Link to="ux-ix"  smooth duration={500}   className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
                     <div>
                       <UxUi />
                     </div>
                     <span className="leading-5 text-[13px] font-normal">User interface, User experience design</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="mb-2">
-                  <a href="#" className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
+                  <Link to="itcons" smooth duration={500} className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
                     <div>
                       <It />
                     </div>
                     <span className="leading-5 text-[13px] font-normal">IT consulting</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a href="#" className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
+                  <Link to="optimization" smooth duration={500} className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
                     <div>
                       <Optimization />
                     </div>
                     <span className="leading-5 text-[13px] font-normal">Optimization IT consulting infrastructure</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
 
-            <li>
-              <a href="#" className=" text-[14px] font-semibold border-b-2 border-white hover:border-primary py-[10px] focus:border-primary">
+            <li className=" cursor-pointer">
+              <Link to="tools" smooth duration={500} className=" text-[14px] font-semibold border-b-2 border-white hover:border-primary py-[10px] focus:border-primary">
                 Tools
-              </a>
+              </Link>
             </li>
 
-            <li>
-              <a href="#" className=" text-[14px] font-semibold border-b-2 border-white hover:border-primary py-[10px] focus:border-primary">
+            <li className=" cursor-pointer">
+              <Link to="clients" smooth duration={500} className=" text-[14px] font-semibold border-b-2 border-white hover:border-primary py-[10px] focus:border-primary">
                 Clients
-              </a>
+              </Link>
             </li>
 
-            <li className=" text-[14px] font-semibold flex items-center py-[10px] gap-1 group hover:last:block relative ">
-              <a href="#">Portfolio</a>
+            <li className=" cursor-pointer text-[14px] font-semibold flex items-center py-[10px] gap-1 group hover:last:block  ">
+              <Link to="delever" smooth duration={500}>Portfolio</Link>
               <img src={downArow} alt="down arrow" width={12} height={12} />
 
-              <ul className=" hidden py-3 bg-white border min-w-[300px] shadow-dropdown rounded-md absolute z-10 top-[90%]   group-hover:block ">
+              <ul className=" hidden py-3 bg-white border min-w-[300px] shadow-dropdown rounded-md absolute z-10 top-[70%]   group-hover:block ">
                 <p className="text-[12px] font-bold leading-4 text-gray-400 ml-[1.45rem] mb-5">Portfolio</p>
 
-                <li className="mb-2">
-                  <a href="#" className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
+                <li className="mb-2 cursor-pointer">
+                  <Link to="delever" smooth duration={500} className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
                     <div>
                       <Delever />
                     </div>
                     <span className="leading-5 text-[13px] font-normal">Delever</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="mb-2">
-                  <a href="#" className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
+                  <Link to="sms" smooth duration={500}  className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
                     <div>
                       <Sms />
                     </div>
                     <span className="leading-5 text-[13px] font-normal">Sms.uz</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="mb-2">
-                  <a href="#" className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
+                  <Link to="goodzone" smooth duration={500} className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
                     <div>
                       <Goodzone />
                     </div>
                     <span className="leading-5 text-[13px] font-normal">Goodzone</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="mb-2">
-                  <a href="#" className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
+                  <Link to="iman" smooth duration={500} className="flex w-full items-center py-2 pl-[34px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 focus:bg-primary focus:text-white">
                     <div>
                       <Iman />
                     </div>
                     <span className="leading-5 text-[13px] font-normal">Iman</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
 
-            <li className=" text-[14px] font-semibold flex items-center py-[10px] gap-1  group hover:last:block relative">
-              <a href="#">Language</a>
+            <li className=" text-[14px] font-semibold flex items-center py-[10px] gap-1  group hover:last:block  cursor-pointer">
+              <Link to="/">Language</Link>
               <img src={downArow} alt="down arrow" width={12} height={12} />
 
-              <ul className=" hidden py-3 bg-white border min-w-[120px] shadow-dropdown rounded-md absolute z-10 top-[90%] left-9   group-hover:block ">
+              <ul className=" hidden py-3 bg-white border min-w-[120px] shadow-dropdown rounded-md absolute z-10 top-[70%]    group-hover:block ">
                 <li className="mb-2">
-                  <a href="#" className="flex w-full items-center py-2 pl-[24px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 ">
+                  <Link to="/" className="flex w-full items-center py-2 pl-[24px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 ">
                     <div className=" w-7 h-7">
                       <LanguageRus />
                     </div>
                     <span className="leading-5 text-[13px] font-normal">Рус</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="mb-2">
-                  <a href="#" className="flex w-full items-center py-2 pl-[24px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 ">
+                  <Link to="/" className="flex w-full items-center py-2 pl-[24px] pr-[11px] text-gray-600 hover:bg-primary hover:text-white transition-all duration-300 gap-3 ">
                     <div className=" w-7 h-7">
                       <LanduageEng />
                     </div>
                     <span className="leading-5 text-[13px] font-normal">Eng</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
 
-            <li className=" text-[14px] font-semibold ">
-              <Button title={"Contact"} url={"#"} py={10} p={16} />
+            <li className=" text-[14px] font-semibold  cursor-pointer">
+              <Button title={"Contact"} url={"contact"} py={10} p={16} />
             </li>
           </ul>
 
@@ -190,16 +188,16 @@ const Navbar = () => {
             </span>
           </div>
 
-          <div className=" flex flex-col gap-3 font-semibold text-[32px] text-center">
-            <a href="">Services</a>
-            <a href="">Clients</a>
-            <a href="">Command</a>
+          <div className=" cursor-pointer flex flex-col gap-3 font-semibold text-[32px] text-center">
+            <Link onClick={()=>setToggle(prev=>!prev)} to="development" smooth duration={500}>Services</Link>
+            <Link onClick={()=>setToggle(prev=>!prev)} to="clients" smooth duration={500}>Clients</Link>
+            <Link onClick={()=>setToggle(prev=>!prev)} to="team" smooth duration={500}>Command</Link>
           </div>
 
           <div className=" flex flex-col gap-6">
-            <a href="#" className={`   bg-primary flex items-center justify-center w-[99%] h-[56px] hover:h-[57px] text-[20px] font-semibold transition-all hover:w-full duration-300  mx-auto  text-white rounde rounded-md  tracking-wide  outline-none `}>
+            <Link onClick={()=>setToggle(prev=>!prev)} to="contact" smooth duration={500}  className={`  cursor-pointer  bg-primary flex items-center justify-center w-[99%] h-[56px] hover:h-[57px] text-[20px] font-semibold transition-all hover:w-full duration-300  mx-auto  text-white rounde rounded-md  tracking-wide  outline-none `}>
               Contact
-            </a>
+            </Link>
             <div className=" flex justify-center items-center gap-6">
               <div className=" bg-primary w-[44px] h-[44px] rounded-full flex items-center justify-center cursor-pointer">
                 <svg width={27} height={27} focusable="false" fill="#fff" viewBox="0 0 24 24" aria-hidden="true">

@@ -20,8 +20,8 @@ const Command = () => {
   }, []);
 
   return (
-    <div className=" h-screen flex flex-col justify-center">
-      <section id="team" className="bg-navbarClose py-20 ">
+    <div id="team" className=" " data-aos="zoom-in-up">
+      <section className="bg-navbarClose py-20 ">
         <div className="custom_contianer">
           <h1 className="text-[32px] md:text-[64px] text-start font-extrabold text-primary mb-[42px]">Team</h1>
           <div className="flex items-center justify-between flex-col-reverse md:flex-row gap-3 md:gap-0">

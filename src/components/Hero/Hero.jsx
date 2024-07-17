@@ -38,7 +38,7 @@ export const Hero = () => {
   }
 
   return (
-    <section id="hero" className=" h-screen flex flex-col justify-center ">
+    <section id="hero" className=" h-screen flex flex-col justify-center " data-aos="zoom-in">
       <div className=" custom_contianer">
         <div className="mt-[140px]  flex items-center justify-between flex-col gap-12 md:gap-0 md:flex-row">
           <div className=" flex flex-col items-center md:items-stretch">

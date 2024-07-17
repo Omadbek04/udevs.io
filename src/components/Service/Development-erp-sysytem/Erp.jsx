@@ -36,7 +36,7 @@ const erpCards = [
 
 const Erp = () => {
   return (
-    <section id="erp" className=" py-4 md:py-[80px] bg-bacground mt-5">
+    <section id="erp" className=" py-4 md:py-[80px] bg-bacground mt-5" data-aos="zoom-in-up">
       <div className="custom_contianer">
         <h1 className=" text-[32px] md:text-[64px] font-extrabold  text-primary mb-[32px] md:mb-[64px]">ERP systems</h1>
 

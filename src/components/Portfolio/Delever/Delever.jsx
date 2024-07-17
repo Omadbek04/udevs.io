@@ -30,7 +30,7 @@ const uxCards = [
 ];
 const Delever = () => {
   return (
-    <section id="delever" className=" py-20">
+    <section id="delever" className=" py-20" data-aos="zoom-in-up">
       <div className="custom_contianer">
         <div className=" block md:hidden">
           <img

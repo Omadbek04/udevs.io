@@ -1,4 +1,4 @@
-// import { Hero } from "./components/Hero/Hero";
+import { Hero } from "./components/Hero/Hero";
 import Clients from "./components/Clients/Clients";
 import Command from "./components/Command/Command";
 import Contact from "./components/Contact/Contact";
@@ -15,27 +15,27 @@ import ItConsulting from "./components/Service/It-consulting/ItConsulting";
 import Optimization from "./components/Service/Optimazition-it-consulting/Optimization";
 import UxIx from "./components/Service/User-Intarface/UxIx";
 import Tools from "./components/Tools/Tools";
-// <Hero />
 
 const App = () => {
   return (
     <>
       <Navbar />
+      <Hero />
       <Direction />
       <Command />
       <DevelopmentMobileApplication />
       <Erp />
       <UxIx />
       <Optimization />
-      <ItConsulting/>
-      <Tools/>
-      <Clients/>
-      <Delever/>
-      <Sms/>
-      <Goodzone/>
-      <Iman/>
-      <HowWeWork/>
-      <Contact/>
+      <ItConsulting  />
+      <Tools />
+      <Clients />
+      <Delever />
+      <Sms />
+      <Goodzone />
+      <Iman />
+      <HowWeWork />
+      <Contact />
     </>
   );
 };

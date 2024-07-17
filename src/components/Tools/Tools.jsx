@@ -52,7 +52,7 @@ const Tools = () => {
   ];
 
   return (
-    <section id="tools" className="py-4 md:py-[80px] bg-bacground">
+    <section id="tools" className="py-4 md:py-[80px] bg-bacground" data-aos="zoom-in-up">
       <div className="custom_contianer">
         <h1 className="text-[32px] md:text-[64px] font-extrabold text-primary">Tools</h1>
 

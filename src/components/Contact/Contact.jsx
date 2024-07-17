@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className=" mb-9">
+    <section id="contact" className=" mb-9" data-aos="zoom-in-up">
       <div className="custom_contianer">
         <h1 className="text-[32px] md:text-[64px] text-start font-extrabold text-primary mb-[42px]">Contact us</h1>
 
