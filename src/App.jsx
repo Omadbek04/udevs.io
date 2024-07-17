@@ -1,6 +1,7 @@
 // import { Hero } from "./components/Hero/Hero";
 import Clients from "./components/Clients/Clients";
 import Command from "./components/Command/Command";
+import Contact from "./components/Contact/Contact";
 import Direction from "./components/Direction/Direction";
 import { HowWeWork } from "./components/HowWeWork";
 import { Navbar } from "./components/Index";
@@ -34,6 +35,7 @@ const App = () => {
       <Goodzone/>
       <Iman/>
       <HowWeWork/>
+      <Contact/>
     </>
   );
 };
