@@ -15,6 +15,7 @@ import ItConsulting from "./components/Service/It-consulting/ItConsulting";
 import Optimization from "./components/Service/Optimazition-it-consulting/Optimization";
 import UxIx from "./components/Service/User-Intarface/UxIx";
 import Tools from "./components/Tools/Tools";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
       <Iman />
       <HowWeWork />
       <Contact />
+      <Footer/>
     </>
   );
 };
